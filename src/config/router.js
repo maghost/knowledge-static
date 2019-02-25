@@ -13,7 +13,7 @@ Vue.use(VueRouter)
 
 const routes = [{
     name: 'auth',
-    path: `${baseUrl}/auth`,
+    path: `${baseUrl}auth`,
     component: Auth
 },
 {
@@ -23,18 +23,18 @@ const routes = [{
 },
 {
     name: 'adminPages',
-    path: `${baseUrl}/admin`,
+    path: `${baseUrl}admin`,
     component: AdminPages,
     meta: { requiresAdmin: true }
 },
 {
     name: 'articleList',
-    path: `${baseUrl}/categories/:id/articles`,
+    path: `${baseUrl}categories/:id/articles`,
     component: ArticleList
 },
 {
     name: 'articleDetail',
-    path: `${baseUrl}/articles/:id`,
+    path: `${baseUrl}articles/:id`,
     component: ArticleDetail
 }]
 

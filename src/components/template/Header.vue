@@ -34,6 +34,9 @@ export default {
     computed: {
         icon() {
             return this.$store.state.isMenuVisible ? "fa-angle-left" : "fa-angle-down"
+        },
+        baseUrl() {
+            return baseUrl
         }
     },
     methods: {
